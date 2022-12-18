@@ -1,0 +1,5 @@
+project ('dbs_project' , 'c')
+gtkdep = dependency ('gtk4')
+x11_dep = dependency ('x11')
+pango_dep = dependency ('pango')
+executable ('main' , 'main.c' , dependencies : [gtkdep , x11_dep , pango_dep])
